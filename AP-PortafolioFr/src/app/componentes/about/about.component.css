@@ -1,0 +1,36 @@
+.row{
+    padding:20px;
+}
+
+div{
+    background-color : forestgreen;
+    text-align: center;
+}
+
+#nombre{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-top: 20%;
+    
+}
+@media(min-width: 576px){
+    #foto{
+        position:absolute;
+        width: 20%;
+        border-radius: 50%;
+        box-shadow: 3px 3px 3px black;
+        left:1%;
+        top:550px;
+    }
+}
+@media(max-width: 575px){
+    #foto{
+        position:absolute;
+        width: 25%;
+        border-radius: 50%;
+        box-shadow: 3px 3px 3px black;
+        left:37%;
+        top:575px;
+    }
+}

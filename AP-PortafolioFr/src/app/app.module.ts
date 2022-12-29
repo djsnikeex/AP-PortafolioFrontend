@@ -14,6 +14,7 @@ import { ExperenciaComponent } from './componentes/experencia/experencia.compone
 import { EducacionComponent } from './componentes/educacion/educacion.component';
 import { HysComponent } from './componentes/hys/hys.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import { ProyectoComponent } from './componentes/proyecto/proyecto.component';
 
 
 
@@ -30,6 +31,7 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     ExperenciaComponent,
     EducacionComponent,
     HysComponent,
+    ProyectoComponent,
 
   ],
   imports: [

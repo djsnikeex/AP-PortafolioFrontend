@@ -17,20 +17,20 @@ div{
 @media(min-width: 576px){
     #foto{
         position:absolute;
-        width: 20%;
-        border-radius: 50%;
+        width: 15%;
+        border-radius: 100%;
         box-shadow: 3px 3px 3px black;
         left:1%;
-        top:550px;
+        top: 650px;;
     }
 }
 @media(max-width: 575px){
     #foto{
         position:absolute;
         width: 25%;
-        border-radius: 50%;
+        border-radius: 100%;
         box-shadow: 3px 3px 3px black;
         left:37%;
-        top:575px;
+        top:800px;
     }
 }

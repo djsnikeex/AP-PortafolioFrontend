@@ -2,3 +2,49 @@
     width: 150px;
     
 }
+
+img{
+    width: 45px;
+    padding-right: 5px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.redes{
+    margin-right: 20px;
+}
+.btn{
+    background-color: forestgreen;
+    border: 2px solid #000;  
+    border-width: medium;
+    color: white;
+}
+.btn:active{
+    background-color: black;
+    color: white;
+    border: 2px solid white
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+    border: 2px solid white
+}
+
+/* celular*/
+@media(max-width: 575px){
+.container{
+    flex-direction: column;
+}
+
+.redes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.redes img{
+    margin: 0.2em;
+}
+}

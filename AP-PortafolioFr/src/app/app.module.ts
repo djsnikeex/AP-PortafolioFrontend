@@ -18,7 +18,10 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
 import { InicioComponent } from './componentes/inicio/inicio.component';
 import { FormsModule } from '@angular/forms';
 import { interceptorProvider } from './servicio/interceptor-service';
-
+import { NewExperienciaComponent } from './componentes/experencia/new-experiencia.component';
+import { EditExperienciaComponent } from './componentes/experencia/edit-experiencia.component';
+import { NeweducacionComponent } from './componentes/educacion/neweducacion.component';
+import { EditEducacionComponent } from './componentes/educacion/edit-educacion.component';
 
 
 
@@ -36,6 +39,10 @@ import { interceptorProvider } from './servicio/interceptor-service';
     HysComponent,
     ProyectoComponent,
     InicioComponent,
+    NewExperienciaComponent,
+    EditExperienciaComponent,
+    NeweducacionComponent,
+    EditEducacionComponent,
 
   ],
   imports: [

@@ -31,7 +31,7 @@ public class PersonaController {
     @PostMapping("personas/crear")
     public String createPersona(@RequestBody Persona persona){
         iPersonaService.savePersona(persona);
-        return "Llegue aca";
+        return "Persona creada con exito";
     }
    
     @PreAuthorize("hasRole('ADMIN')")

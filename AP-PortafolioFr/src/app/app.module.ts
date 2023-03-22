@@ -16,6 +16,8 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import { ProyectoComponent } from './componentes/proyecto/proyecto.component';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import { InicioComponent } from './componentes/inicio/inicio.component';
+import { FormsModule } from '@angular/forms';
+import { interceptorProvider } from './servicio/interceptor-service';
 
 
 
@@ -40,9 +42,13 @@ import { InicioComponent } from './componentes/inicio/inicio.component';
     BrowserModule,
     AppRoutingModule,
     NgCircleProgressModule.forRoot({}),
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
+
   ],
-  providers: [],
+  providers: [
+    interceptorProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

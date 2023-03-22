@@ -3,13 +3,13 @@ package com.Portfolio.AdrOnores.Security.Dto;
 import jakarta.validation.constraints.NotBlank;
 
 public class LoginUsuario {
-     @NotBlank
+    @NotBlank
     private String nombreUsuario;
     @NotBlank
     private String password;
-
     
-    //G&S
+    //Getter & Setter
+
     public String getNombreUsuario() {
         return nombreUsuario;
     }

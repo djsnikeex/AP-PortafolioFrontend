@@ -13,9 +13,11 @@ import org.springframework.stereotype.Service;
 public class RolService {
     @Autowired
     iRolRepository irolRepository;
-    public Optional<Rol> getByRolNombre(RolNombre rolNombre){
+    
+      public Optional<Rol> getByRolNombre(RolNombre rolNombre){
         return irolRepository.findByRolNombre(rolNombre);
     }
+    
     public void save(Rol rol){
         irolRepository.save(rol);
     }

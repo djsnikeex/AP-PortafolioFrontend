@@ -11,24 +11,22 @@ import jakarta.validation.constraints.NotNull;
 
 @Entity
 public class Rol {
-    @Id
+     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    
     @NotNull
     @Enumerated(EnumType.STRING)
     private RolNombre rolNombre;
     
-    
-    //constructor
-
+    //Constructor
     public Rol() {
     }
 
     public Rol(RolNombre rolNombre) {
         this.rolNombre = rolNombre;
     }
-    //Getter and Setter
+    
+    //Getter y Setter
 
     public int getId() {
         return id;

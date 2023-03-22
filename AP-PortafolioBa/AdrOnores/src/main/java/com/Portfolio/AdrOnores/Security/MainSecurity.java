@@ -22,7 +22,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 @Configuration
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true)
-public class MainSecurity{
+public class MainSecurity {
     @Autowired
     UserDetailsImpl userDetailsServiceImpl;
 
@@ -58,6 +58,4 @@ public class MainSecurity{
 
         return http.build();
     }
-    
-    
 }

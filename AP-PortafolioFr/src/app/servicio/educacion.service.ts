@@ -1,13 +1,14 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment';
 import { Educacion } from '../model/educacion';
 
 @Injectable({
   providedIn: 'root'
 })
 export class EducacionService {
-  URL = 'http://localhost:8080/educacion/';
+  URL = environment.URl + '/educacion/';
   constructor(private httpClient:HttpClient) { }
 
   public lista(): Observable<Educacion[]>{
@@ -19,7 +20,7 @@ export class EducacionService {
   }
 
   public save(educacion: Educacion): Observable<any>{
-    return this.httpClient.post<any>(this.URL+'create', educacion);
+    return this.httpClient.post<any>(this.URL+`create`, educacion);
   }
 
   public update(id:number, educacion: Educacion): Observable<any>{

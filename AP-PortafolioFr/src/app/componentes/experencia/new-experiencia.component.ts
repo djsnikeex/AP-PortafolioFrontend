@@ -16,7 +16,7 @@ export class NewExperienciaComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onCreate(){
+  onCreate():void{
     const exp= new Experiencia(this.nombreE, this.descripcionE);
     this.sExperiencia.save(exp).subscribe(
       data=>{

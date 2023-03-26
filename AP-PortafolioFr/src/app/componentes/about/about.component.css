@@ -1,12 +1,17 @@
 .row{
-    padding:20px;
+    padding:5rem;
 }
 
 div{
-    background-color : forestgreen;
     text-align: center;
 }
 
+section{
+    width: 100%;
+}
+.container{
+    padding: 5%;
+}
 #nombre{
     color: white;
     font-family: 'Roboto', sans-serif;
@@ -14,23 +19,39 @@ div{
     margin-top: 20%;
     
 }
-@media(min-width: 576px){
-    #foto{
-        position:absolute;
-        width: 15%;
-        border-radius: 100%;
-        box-shadow: 3px 3px 3px black;
-        left:1%;
-        top: 650px;;
-    }
+.imagenperfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 30%;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px black;
+
 }
-@media(max-width: 575px){
-    #foto{
-        position:absolute;
-        width: 25%;
-        border-radius: 100%;
-        box-shadow: 3px 3px 3px black;
-        left:37%;
-        top:800px;
-    }
+#texto{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-top: 20%;
+    margin-bottom: 20%;
 }
+#foto{
+        border-radius: 15px;
+        box-shadow: 3px 3px 3px black;
+        width: 30%;
+    }
+    .descripcion{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    }
+
+    p{
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        font-weight: 700;
+    }

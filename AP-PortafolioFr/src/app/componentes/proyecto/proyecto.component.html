@@ -1,12 +1,26 @@
+<div class="container my-2 rounded">
 <div class="row">
-    <h1>Proyectos</h1>
-    <div class="contenedor">
-        <div class="col-sm-12 col-md-7 col-lg-7 parte1">
-        <h1>Bot discord-telegram</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum explicabo ab aliquam sint, sequi quasi labore ducimus aspernatur tempore perspiciatis nulla dolore atque. Distinctio beatae quia commodi amet, aspernatur aut?</p>
-        </div>
-        <div  class="col-sm-12 col-md-3 col-lg-3 offset-md-1 offset-lg-1 parte2">
-            <img src="../assets/images/botds.PNG" class="img-fluid img-proyecto" >
+    <h1 class="text-center">Proyecto</h1>
+        
+    <div class="container-fluid">
+      <button type="button" class="btn btn-warning w-100 my-2" routerLink="/newproyecto" *ngIf="isLogged"> Agregar proyecto</button>
+    <div class="card bg-success mb-3 border border-2" *ngFor="let proyecto of
+    proyecto">
+        <div class="row g-0">
+            <div class="col-md-7 ">
+              <div class="card-body">
+            <dl class="card-list">
+              <dt><h3>{{proyecto.nombre}}</h3></dt><dd></dd>    
+              <dt>Description:</dt><dd>{{proyecto.descripcion}}</dd>
+              <dt>URL :</dt><dd><a href="{{proyecto.url}}">{{proyecto.url}}</a></dd>
+            </dl>
+            <button class="btn btn-warning" routerLink="editproyecto/{{proyecto.id}}" *nfIf="isLogged"><i
+                class="bi bi-pencil-square" ></i></button>
+            <button class="btn btn-danger" (click)="delete(proyecto.id)" *nfIf="isLogged"><i class="bi bi-x-octagon"></i></button>
+              </div> 
+            </div>
+          </div>
         </div>
     </div>
+</div>
 </div>

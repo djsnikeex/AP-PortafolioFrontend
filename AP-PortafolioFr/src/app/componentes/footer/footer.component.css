@@ -1,8 +1,6 @@
-.row{
-  background-color: forestgreen;
-}
 footer{
-  color: rgb(0, 0, 0);
+  color: #ffffff;
+  font-weight: bolder;
   font-size: 20px;
   display:flex;
   flex-direction: column;

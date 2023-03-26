@@ -1,10 +1,9 @@
-<div class="row">
-    <h1>Habilidades</h1>
-    <div class="col-lg-2">
-        <button type="button" class="btn btn-warning" routerLink="/newskill" *ngIf="isLogged"> NUEVA SKILL</button>
-            </div>
+<div class="container rounded my-2 py-3">
+    <h1 class="text-center">Habilidades</h1>
+        <button type="button" class="btn btn-warning w-100" routerLink="/newskill" *ngIf="isLogged"> Agregar Skill</button>
 
-        <div class="text-center col-sm-4 col-md-4 col-lg-4" *ngFor="let skill of
+    <div class="row">
+        <div class="text-center col-sm-4 col-md-4 col-lg-4 d-flex flex-column" *ngFor="let skill of
             skill">
             <circle-progress
                 [percent]="(skill.porcentaje)"
@@ -33,5 +32,5 @@
                 <button class="btn btn-danger" (click)="delete(skill.id)"><i class="bi bi-x-octagon"></i></button>
             </td>
         </div>
-
-    </div>
+        </div>
+</div>

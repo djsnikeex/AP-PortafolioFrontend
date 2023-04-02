@@ -20,6 +20,7 @@ export class EditaboutComponent implements OnInit {
     this.personaS.detail(id).subscribe(
       data => {
         this.persona = data;
+        console.log(this.persona);
       }, err => {
         alert(err.error.mensaje);
         this.router.navigate(['']);

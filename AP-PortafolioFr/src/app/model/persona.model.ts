@@ -26,7 +26,6 @@ export class persona {
         this.banner = banner;
         this.ciudad = ciudad;
 
-
     }
     
 }

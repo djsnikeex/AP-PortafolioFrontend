@@ -18,6 +18,7 @@ export class EditExperienciaComponent implements OnInit {
       this.sExperiencia.detail(id).subscribe(
         data => {
           this.expLab = data;
+          console.log(this.expLab)
         }, err => {
           alert(err.error.mensaje);
           this.router.navigate(['']);

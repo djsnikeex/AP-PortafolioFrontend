@@ -14,11 +14,17 @@ body{
     background-image: url(../src/assets/images/background-container.jpg);
 }
 
-
+.card{
+    background-image: url(../src/assets/images/background-card.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 

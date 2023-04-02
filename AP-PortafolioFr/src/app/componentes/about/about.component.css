@@ -1,57 +1,47 @@
-.row{
-    padding:5rem;
-}
+    .card{
+        display: grid;
+        grid-template-rows: 6rem 3rem 3rem 1fr;
+        grid-template-columns: 1fr;
+        
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 
-div{
-    text-align: center;
-}
+    .banner{
+        grid-row: 1/4;
+        grid-column: 1/-1;
+        
+    }
 
-section{
-    width: 100%;
-}
-.container{
-    padding: 5%;
-}
-#nombre{
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    margin-top: 20%;
+    .banner img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        
+    }
+
+    .display-picture{
+        grid-row: 1/4;
+        grid-column: 1/-1;
+        padding: 0.5rem;
+        z-index: 1;
+    }
+
+    .display-picture img{
+        height: 100%;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+    }
+
+    .content{
+        grid-row: 4/5;
+        grid-column: 1/-1;
+        padding: 24px;
+        font-family: 'kreon';
+        font-size: 1.2rem;
+        color: #fff;
+        
+    }
+
     
-}
-.imagenperfil{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    width: 30%;
-    border-radius: 15px;
-    box-shadow: 3px 3px 3px black;
-
-}
-#texto{
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    margin-top: 20%;
-    margin-bottom: 20%;
-}
-#foto{
-        border-radius: 15px;
-        box-shadow: 3px 3px 3px black;
-        width: 30%;
-    }
-    .descripcion{
-    display: block;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    }
-
-    p{
-        color: rgb(255, 255, 255);
-        font-size: 25px;
-        font-weight: 700;
-    }

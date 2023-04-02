@@ -1,27 +1,39 @@
-<div class="container d-flex d-flex flex-column align-items-center rounded my-2">
-        <button type="button" class="btn btn-warning w-100 my-2" routerLink="/editacercade/1" *ngIf="isLogged">
-           Editar acerca de mi
-        </button>
-
-    <div class="d-flex flex-row">
-    <section class="d-flex .imagenperfil">
-            <img src="{{persona.img}}" id="foto" class="img-fluid w-50 d-block">
-    </section>
-    
-    <section class="d-flex">
-        <p id="nombre">{{persona.nombre}} {{persona.apellido}}</p>
-        
-    </section>
-
-    <section>
-        <p id="texto">FullStack Developer Jr</p>
-    </section>
+<div class="card rounded border border-2">
+    <div class="display-picture d-flex justify-content-center">
+        <img src="{{persona.img}}" alt="image-example" id="imagen-data">
     </div>
-    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 descripcion">
+    <div class="banner">
+        <img src="{{persona.banner}}" alt="image-example " class="
+            rounded-top" id="imagen-data">
+    </div>
+    <div class="content d-flex flex-column justify-content-center">
+        <div class="d-flex flex-column align-items-center">
+            <h1>{{persona.nombre}} {{persona.apellido}}</h1>
+            <h3>{{persona.titulo}}</h3>
 
-            <h1>Acerca de mi</h1>
 
-    
-            <p>{{persona.descripcion}}</p>
+        </div>
+        <div class="d-flex flex-row justify-content-around">
+            <div class="d-flex flex-column text-center">
+                <h4 class="text-decoration-underline">Informacion personal: </h4>
+                <h5>Edad: {{persona.edad}} años</h5>
+                <h5>Localidad: {{persona.ciudad}}</h5>
+            </div>
+            <div class="d-flex flex-column text-center">
+                <h4 class="text-decoration-underline">Contacto: </h4>
+                <h5>Email: {{persona.email}}</h5>
+                <h5>Celular: {{persona.celular}}</h5>
+            </div>
+        </div>
+        <div class="d-flex flex-column align-items-center">
+            <h4 class="text-decoration-underline">Descripcion: </h4>
+            <h5>{{persona.descripcion}}</h5>
+        </div>
+    </div>
+    <div class="px-2">
+        <button type="button" class="btn btn-warning w-100 my-2"
+            routerLink="/editacercade/1" *ngIf="isLogged">
+            Editar acerca de mi
+        </button>
     </div>
 </div>

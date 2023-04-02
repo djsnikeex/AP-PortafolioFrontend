@@ -7,7 +7,6 @@ import { FooterComponent } from './componentes/footer/footer.component';
 import { HeaderComponent } from './componentes/header/header.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { ApLogoComponent } from './componentes/ap-logo/ap-logo.component';
-import { BannerComponent } from './componentes/banner/banner.component';
 import { AboutComponent } from './componentes/about/about.component';
 import { ExperenciaComponent } from './componentes/experencia/experencia.component';
 import { EducacionComponent } from './componentes/educacion/educacion.component';
@@ -40,7 +39,6 @@ import { NewProyectoComponent } from './componentes/proyecto/new-proyecto.compon
     HeaderComponent,
     LoginComponent,
     ApLogoComponent,
-    BannerComponent,
     AboutComponent,
     ExperenciaComponent,
     EducacionComponent,

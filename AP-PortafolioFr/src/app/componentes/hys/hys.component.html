@@ -3,7 +3,7 @@
         <button type="button" class="btn btn-warning w-100" routerLink="/newskill" *ngIf="isLogged"> Agregar Skill</button>
 
     <div class="row">
-        <div class="text-center col-sm-4 col-md-4 col-lg-4 d-flex flex-column" *ngFor="let skill of
+        <div class="text-center col-sm-12 col-md-6 col-lg-6 d-flex flex-column" *ngFor="let skill of
             skill">
             <circle-progress
                 [percent]="(skill.porcentaje)"
@@ -11,15 +11,16 @@
                 [outerStrokeWidth]="12"
                 [innerStrokeWidth]="4"
                 [outerStrokeColor]="'#78C000'"
-                [innerStrokeColor]="'#C7E596'"
-                [imageSrc]="''"
-                [imageHeight]="120"
+                [innerStrokeColor]="'#000000'"
+                [imageSrc]="(skill.img)"
+
+                [imageHeight]="150"
                 [showTitle]="true"
                 [title]="(skill.nombre)"
-                [imageWidth]="120"
-                [showImage]="false"
+                [imageWidth]="150"
+                [showImage]="true"
                 [showUnits]="false"
-                [backgroundColor]="'#FFFFFF'"
+                [backgroundColor]="'#000000'"
                 [animation]="true"
                 [animationDuration]="300">
             </circle-progress>

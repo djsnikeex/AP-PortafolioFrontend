@@ -13,7 +13,7 @@
 #logoAP{
     width: 10rem;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     
 }
 
@@ -59,20 +59,3 @@ body{
     height: 100%;
     width: 100%;
 }
-/* celular*/
-/* @media(max-width: 575px){
-    .container{
-        flex-direction: column;
-    }
-    
-    .redes{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    
-    }
-    .redes img{
-        margin: 0.2em;
-    }
-    } */

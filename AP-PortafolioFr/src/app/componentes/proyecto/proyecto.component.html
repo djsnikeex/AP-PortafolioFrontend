@@ -1,26 +1,37 @@
 <div class="container my-2 rounded">
-<div class="row">
+  <div class="row">
     <h1 class="text-center">Proyecto</h1>
-        
+
     <div class="container-fluid">
-      <button type="button" class="btn btn-warning w-100 my-2" routerLink="/newproyecto" *ngIf="isLogged"> Agregar proyecto</button>
-    <div class="card bg-success mb-3 border border-2" *ngFor="let proyecto of
-    proyecto">
+      <button type="button" class="btn btn-warning w-100 my-2"
+        routerLink="/newproyecto" *ngIf="isLogged"> Agregar proyecto</button>
+      <div class="card bg-success mb-3 border border-2" *ngFor="let proyecto of
+        proyecto">
         <div class="row g-0">
-            <div class="col-md-7 ">
-              <div class="card-body">
-            <dl class="card-list">
-              <dt><h3>{{proyecto.nombre}}</h3></dt><dd></dd>    
-              <dt>Description:</dt><dd>{{proyecto.descripcion}}</dd>
-              <dt>URL :</dt><dd><a href="{{proyecto.url}}">{{proyecto.url}}</a></dd>
-            </dl>
-            <button class="btn btn-warning" routerLink="editproyecto/{{proyecto.id}}" *nfIf="isLogged"><i
-                class="bi bi-pencil-square" ></i></button>
-            <button class="btn btn-danger" (click)="delete(proyecto.id)" *nfIf="isLogged"><i class="bi bi-x-octagon"></i></button>
-              </div> 
+          <div class="col-md-5 py-2 px-2">
+          <img src="{{proyecto.img}}" class="img-fluid rounded-start"
+            alt="{{proyecto.nombre}}">
+          </div>
+          <div class="col-md-7 ">
+            <div class="card-body">
+              <dl class="card-list d-flex flex-column align-items-center">
+                <dt><h3>{{proyecto.nombre}}</h3></dt><dd></dd>
+                <dt><h5>Descripcion:</h5></dt><dd><h6>{{proyecto.descripcion}}</h6></dd>
+                <dt><h5>URL :</h5></dt><dd><a class="text-warning  text-bolder" href="{{proyecto.url}}"><h6>{{proyecto.url}}</h6></a></dd>
+              </dl>
+                <div class="d-flex flex-row justify-content-around">
+                  <td *ngIf="isLogged">
+                      <button class="btn btn-warning" routerLink="editproyecto/{{proyecto.id}}"><i
+                              class="bi bi-pencil-square"></i></button>
+                  </td>
+                  <td *ngIf="isLogged">
+                      <button class="btn btn-danger" (click)="delete(proyecto.id)"><i class="bi bi-x-octagon"></i></button>
+                  </td>
+              </div>
             </div>
           </div>
         </div>
+      </div>
     </div>
-</div>
+  </div>
 </div>

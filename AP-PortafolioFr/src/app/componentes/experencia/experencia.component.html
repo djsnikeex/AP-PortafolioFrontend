@@ -1,33 +1,52 @@
-<div class="container rounded my-2">
+<div class="container rounded my-2 w-100">
     <div class="row">
         <h1 class="text-center">Experencia laboral</h1>
 
-            <button type="button" class="btn btn-warning my-2" routerLink="/nuevaexp"
-                *ngIf="isLogged">
-                Nueva experiencia
-            </button>
+        <button type="button" class="btn btn-warning my-2"
+            routerLink="/nuevaexp"
+            *ngIf="isLogged">
+            Nueva experiencia
+        </button>
         <div class="col-lg-1">
         </div>
-            <table class="table table-dark rounded">
-                <thead>
-                    <tr>
-                        <th>Nombre</th>
-                        <th>Descripcion</th>
-                        <th></th>
-                        <th></th>
-                    </tr>
-                    <tbody>
-                        <tr *ngFor="let experiencia of exp">
-                            <td><h2>{{experiencia.nombreE}}</h2></td>
-                            <td>{{experiencia.descripcionE}}</td>
-                            <td *ngIf="isLogged"><button class="btn btn-warning"
-                                    routerLink="/editexp/{{experiencia.id}}"><i
-                                        class="bi bi-pencil-square"></i></button></td>
-                            <td *ngIf="isLogged"><button class="btn btn-danger"
-                                    (click)="delete(experiencia.id)"><i
-                                        class="bi bi-x-octagon"></i></button></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
     </div>
+
+
+
+    <div class="d-flex flex-column align-items-center">
+        <div class="card bg-secondary mb-3 border border-2 col-xs-12 col-sm-12 " *ngFor="let
+            expe of
+            exp">
+            <div class="row g-0">
+                <div class="col-md-5">
+                    <img src="{{expe.imgE}}"
+                        class="img-fluid rounded-start"
+                        alt="image-example" id="imagen-data">
+                </div>
+                <div class="col-md-7 ">
+                    <div class="card-body ">
+                        <dl class="card-list text-center d-flex flex-column
+                            align-items-center justify-content-center">
+                            <dt><h3>{{expe.nombreE}}</h3></dt><dd></dd>
+                            <dt><h6>Cargo: </h6></dt><dd><h5>{{expe.puestoE}}</h5></dd>
+                            <dt><h6>Descripcion de tarea:</h6></dt><dd><h5>{{expe.descripcionE}}</h5></dd>
+                            <dt><h6>Periodo de actividad: </h6></dt><dd><h5>{{expe.periodoE}}</h5></dd>
+                        </dl>
+                        <div class="d-flex flex-row justify-content-around">
+                            <td *ngIf="isLogged">
+                                <button class="btn btn-warning"
+                                    routerLink="editexp/{{expe.id}}"><i
+                                        class="bi bi-pencil-square"></i></button>
+                            </td>
+                            <td *ngIf="isLogged">
+                                <button class="btn btn-danger"
+                                    (click)="delete(expe.id)"><i class="bi
+                                        bi-x-octagon"></i></button>
+                            </td>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

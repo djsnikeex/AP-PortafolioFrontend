@@ -3,7 +3,7 @@ body{
     padding: 0%;
     width: 100vw;
     height: 100vh;
-    background-image: url(../src/assets/images/background.jpg);
+    background-image: url(https://fondosmil.com/fondo/6466.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -12,18 +12,17 @@ body{
 
 .container{
     background-image: url(../src/assets/images/background-container.jpg);
-}
-
-.card{
-    background-image: url(../src/assets/images/background-card.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
     
 }
 

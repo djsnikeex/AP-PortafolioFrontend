@@ -11,20 +11,30 @@ import { InicioComponent } from './componentes/inicio/inicio.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { EditProyectoComponent } from './componentes/proyecto/edit-proyecto.component';
 import { NewProyectoComponent } from './componentes/proyecto/new-proyecto.component';
-import { Educacion } from './model/educacion';
+import { ExperenciaComponent } from './componentes/experencia/experencia.component';
+import { EducacionComponent } from './componentes/educacion/educacion.component';
+import { ProyectoComponent } from './componentes/proyecto/proyecto.component';
+import { HysComponent } from './componentes/hys/hys.component';
+
 
 const routes: Routes = [ 
 {path:'', component: InicioComponent}, 
 {path:'login', component: LoginComponent},
-{path:'nuevaexp', component: NewExperienciaComponent},
-{path:'editexp/:id', component: EditExperienciaComponent},
-{path:'nuevaedu', component: NeweducacionComponent},
-{path:'editedu/:id', component: EditEducacionComponent},
-{path:'newskill', component: NewSkillComponent},
-{path:'editskill/:id', component: EditSkillComponent},
+{path:'experiencia/nuevaexp', component: NewExperienciaComponent},
+{path:'experiencia/editexp/:id', component: EditExperienciaComponent},
+{path:'educacion/nuevaedu', component: NeweducacionComponent},
+{path:'educacion/editedu/:id', component: EditEducacionComponent},
+{path:'skill/newskill', component: NewSkillComponent},
+{path:'skill/editskill/:id', component: EditSkillComponent},
 {path:'editacercade/:id', component: EditaboutComponent},
-{path:'newproyecto', component: NewProyectoComponent},
-{path:'editproyecto/:id', component: EditProyectoComponent},
+{path:'proyecto/newproyecto', component: NewProyectoComponent},
+{path:'proyecto/editproyecto/:id', component: EditProyectoComponent},
+{path: 'experiencia', component: ExperenciaComponent},
+{path: 'educacion', component: EducacionComponent},
+{path: 'skill', component: HysComponent},
+{path: 'proyecto', component: ProyectoComponent},
+
+
 
 
 ];

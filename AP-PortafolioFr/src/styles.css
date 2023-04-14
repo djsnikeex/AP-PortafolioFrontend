@@ -10,13 +10,6 @@ body{
     background-attachment: fixed;
 }
 
-.container{
-    background-image: url(../src/assets/images/background-container.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
 
 *{
     margin: 0;

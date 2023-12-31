@@ -38,7 +38,7 @@ export class EditaboutComponent implements OnInit {
     this.persona.img= this.imageS.url;
     this.personaS.update(id, this.persona).subscribe(
       data => {
-        alert('Educacion actualizada con exito');
+        alert('Perfil actualizado con exito');
         this.router.navigate(['']);
         console.log(this.persona);
       },err => {
